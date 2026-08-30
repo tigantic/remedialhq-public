@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "brand": "ReMediaLHQ",
+  "owner": "OWNER_PRIVATE",
+  "authority_status": "SITE_ONLY_GRANTED",
+  "global_publication_enabled": false,
+  "platforms": {
+    "site": {
+      "public_authorized": true,
+      "authorized_at": "2026-08-29T22:00:39Z",
+      "scope": "Static remedialhq.com site and policy pages only"
+    },
+    "youtube": {"private_upload_authorized": false, "visible_upload_authorized": false, "authorized_at": null},
+    "x": {"public_authorized": false, "authorized_at": null},
+    "instagram": {"public_authorized": false, "authorized_at": null},
+    "facebook": {"public_authorized": false, "authorized_at": null},
+    "threads": {"public_authorized": false, "authorized_at": null},
+    "tiktok": {"draft_upload_authorized": false, "public_authorized": false, "authorized_at": null},
+    "newsletter": {"send_authorized": false, "authorized_at": null}
+  }
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "scene": 1,
+    "duration_seconds": 4,
+    "kicker": "THE COUNTDOWN",
+    "hero": "82 DAYS",
+    "sub": "Until GTA VI's currently scheduled November 19 launch.",
+    "claim_ids": [
+      "CLM-0001",
+      "CLM-0015"
+    ]
+  },
+  {
+    "scene": 2,
+    "duration_seconds": 4,
+    "kicker": "CURRENT DEMAND",
+    "hero": "~21M",
+    "sub": "Provider estimate of monthly searches for GTA 6 - rounded, not audited.",
+    "claim_ids": [
+      "CLM-0014"
+    ]
+  },
+  {
+    "scene": 3,
+    "duration_seconds": 4,
+    "kicker": "THE DISTORTION",
+    "hero": "STATE \u2260 CERTAINTY",
+    "sub": "Official material can show behavior without confirming final mechanics.",
+    "claim_ids": [
+      "CLM-0006",
+      "CLM-0007"
+    ]
+  },
+  {
+    "scene": 4,
+    "duration_seconds": 4,
+    "kicker": "THE PROBLEM",
+    "hero": "HYPE \u2260 FACT",
+    "sub": "Keep confirmed, observed, reported, and inferred claims visibly separate.",
+    "claim_ids": []
+  },
+  {
+    "scene": 5,
+    "duration_seconds": 4,
+    "kicker": "THE METHOD",
+    "hero": "CLAIM STATES",
+    "sub": "Every factual line is bound to reviewed evidence.",
+    "claim_ids": []
+  },
+  {
+    "scene": 6,
+    "duration_seconds": 4,
+    "kicker": "ATTRIBUTED",
+    "hero": "REPORTED",
+    "sub": "Third-party claims stay attributed; inference stays labeled.",
+    "claim_ids": []
+  },
+  {
+    "scene": 7,
+    "duration_seconds": 4,
+    "kicker": "THE BOUNDARY",
+    "hero": "NO LEAKS",
+    "sub": "No stolen builds. No trailer dumps. No fake certainty.",
+    "claim_ids": [
+      "CLM-0010",
+      "CLM-0011"
+    ]
+  },
+  {
+    "scene": 8,
+    "duration_seconds": 4,
+    "kicker": "THE PRODUCT",
+    "hero": "LIVING LEDGER",
+    "sub": "Sources, claim states, and visible corrections.",
+    "claim_ids": []
+  },
+  {
+    "scene": 9,
+    "duration_seconds": 4,
+    "kicker": "SUBSCRIBE",
+    "hero": "BUILD THE RECORD",
+    "sub": "Before the hype becomes history.",
+    "claim_ids": []
+  }
+]

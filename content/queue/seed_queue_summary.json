@@ -1,0 +1,29 @@
+{
+  "count": 82,
+  "immediate": [
+    "OPP-0002",
+    "OPP-0003",
+    "OPP-0004",
+    "OPP-0028",
+    "OPP-0056",
+    "OPP-0057"
+  ],
+  "evidence_blocked": [
+    "OPP-0069",
+    "OPP-0076",
+    "OPP-0077",
+    "OPP-0078",
+    "OPP-0079",
+    "OPP-0080",
+    "OPP-0081"
+  ],
+  "franchises": {
+    "atlas": 7,
+    "engine_room": 11,
+    "launch_utility": 18,
+    "ledger": 8,
+    "mechanics_lab": 13,
+    "people": 8,
+    "rumor_court": 17
+  }
+}

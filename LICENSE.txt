@@ -1,0 +1,5 @@
+Copyright (c) 2026 ReMediaLHQ rights holder. All rights reserved.
+
+This software, documentation, brand system, media templates, data structures, and associated artifacts are proprietary. No permission is granted to copy, modify, distribute, sublicense, publish, deploy, or commercially exploit any portion except under written authorization from the ReMediaLHQ rights holder or a later valid assignee.
+
+Third-party names and marks referenced for editorial identification remain the property of their respective owners.

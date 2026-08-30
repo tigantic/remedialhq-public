@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#020403"/><stop offset="1" stop-color="#172018"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#182019" stroke-width="1"/></pattern><filter id="g"><feGaussianBlur stdDeviation="11" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1280" height="720" fill="url(#bg)"/><rect width="1280" height="720" fill="url(#grid)" opacity=".7"/>
+  <rect x="66" y="55" width="284" height="48" rx="24" fill="#1C271E"/><text x="208" y="87" text-anchor="middle" fill="#B8FF3D" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" font-weight="850" letter-spacing="2">REMEDIALHQ</text>
+  <text x="66" y="190" fill="#829087" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="6">GTA VI</text>
+  <text x="60" y="305" fill="#F2F7F3" font-family="DejaVu Sans,Arial,sans-serif" font-size="102" font-weight="950" letter-spacing="-5">ACTUALLY</text>
+  <text x="60" y="414" fill="#B8FF3D" font-family="DejaVu Sans,Arial,sans-serif" font-size="102" font-weight="950" letter-spacing="-5" filter="url(#g)">OFFICIAL?</text>
+  <text x="66" y="486" fill="#829087" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="600">What Rockstar confirmed - and what it did not.</text>
+  <g transform="translate(72 552)">
+    <rect width="215" height="56" rx="28" fill="#1B271D"/><text x="107" y="37" text-anchor="middle" fill="#B8FF3D" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="800">CONFIRMED</text>
+    <rect x="232" width="198" height="56" rx="28" fill="#142529"/><text x="331" y="37" text-anchor="middle" fill="#51D6E8" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="800">OBSERVED</text>
+    <rect x="447" width="198" height="56" rx="28" fill="#2A2214"/><text x="546" y="37" text-anchor="middle" fill="#FFB020" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="800">REPORTED</text>
+    <rect x="662" width="184" height="56" rx="28" fill="#211C32"/><text x="754" y="37" text-anchor="middle" fill="#A68BFF" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" font-weight="800">INFERRED</text>
+  </g>
+  <g transform="translate(976 84)"><circle cx="90" cy="90" r="82" fill="none" stroke="#B8FF3D" stroke-width="4" opacity=".42"/><text x="90" y="116" text-anchor="middle" fill="#F2F7F3" font-family="DejaVu Sans,Arial,sans-serif" font-size="78" font-weight="900">HQ</text></g>
+</svg>
