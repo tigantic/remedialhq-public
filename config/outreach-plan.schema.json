@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://remedialhq.com/schemas/outreach-plan.v1.json",
+  "title": "ReMediaLHQ Private Outreach Plan",
+  "description": "Privacy-minimized baseline contract for the 14-day Creator Signal Desk test. The local importer is authoritative and additionally enforces calendar-valid dates, canonical integer tokens, cross-row dates, evidence uniqueness, and full-cohort rules.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "campaign_ref",
+    "campaign_start",
+    "campaign_end",
+    "utc_offset_minutes",
+    "daily_contact_limit",
+    "controls",
+    "prospects"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "remedialhq.outreach-plan.v1"
+    },
+    "campaign_ref": {
+      "type": "string",
+      "minLength": 36,
+      "maxLength": 36,
+      "pattern": "^cmp_[0-9a-f]{32}$"
+    },
+    "campaign_start": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 10,
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "format": "date"
+    },
+    "campaign_end": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 10,
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "format": "date"
+    },
+    "utc_offset_minutes": {
+      "type": "integer",
+      "minimum": -720,
+      "maximum": 840
+    },
+    "daily_contact_limit": {
+      "const": 10
+    },
+    "controls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sender_identification_ready",
+        "sending_domain_authenticated",
+        "postal_address_requirement_reviewed",
+        "opt_out_process_ready",
+        "evidence_sha256"
+      ],
+      "properties": {
+        "sender_identification_ready": {
+          "const": true
+        },
+        "sending_domain_authenticated": {
+          "const": true
+        },
+        "postal_address_requirement_reviewed": {
+          "const": true
+        },
+        "opt_out_process_ready": {
+          "const": true
+        },
+        "evidence_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "prospects": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 50,
+      "items": {
+        "$ref": "#/$defs/prospect"
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "minLength": 64,
+      "maxLength": 64,
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "prospect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prospect_id",
+        "queue_position",
+        "segment",
+        "channel",
+        "planned_contact_date",
+        "publishes_original_analysis",
+        "specific_upcoming_piece",
+        "public_business_channel_verified",
+        "qualification_evidence_sha256",
+        "recent_work_reference_sha256",
+        "sample_insight_sha256"
+      ],
+      "properties": {
+        "prospect_id": {
+          "type": "string",
+          "minLength": 36,
+          "maxLength": 36,
+          "pattern": "^prs_[0-9a-f]{32}$"
+        },
+        "queue_position": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        },
+        "segment": {
+          "enum": [
+            "GAMING_CREATOR",
+            "ENTERTAINMENT_CREATOR",
+            "NEWSLETTER",
+            "PODCAST"
+          ]
+        },
+        "channel": {
+          "enum": [
+            "BUSINESS_EMAIL",
+            "CONTACT_FORM",
+            "SOCIAL_DM",
+            "OTHER_PUBLIC_BUSINESS_CHANNEL"
+          ]
+        },
+        "planned_contact_date": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 10,
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "format": "date"
+        },
+        "publishes_original_analysis": {
+          "const": true
+        },
+        "specific_upcoming_piece": {
+          "const": true
+        },
+        "public_business_channel_verified": {
+          "const": true
+        },
+        "qualification_evidence_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "recent_work_reference_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "sample_insight_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    }
+  }
+}

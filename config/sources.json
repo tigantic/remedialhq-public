@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "default_policy": "deny",
+  "sources": [
+    {
+      "id": "rockstar-gta6-official",
+      "name": "Rockstar Games - GTA VI",
+      "url": "https://www.rockstargames.com/VI",
+      "tier": "FIRST_PARTY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 15,
+      "allowed": true
+    },
+    {
+      "id": "rockstar-newswire",
+      "name": "Rockstar Newswire",
+      "url": "https://www.rockstargames.com/newswire",
+      "tier": "FIRST_PARTY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 15,
+      "allowed": true
+    },
+    {
+      "id": "take-two-ir",
+      "name": "Take-Two Investor Relations",
+      "url": "https://www.take2games.com/ir",
+      "tier": "FIRST_PARTY_CORPORATE",
+      "collection": "filings_releases",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 60,
+      "allowed": true
+    },
+    {
+      "id": "rockstar-youtube",
+      "name": "Rockstar Games official YouTube",
+      "url": "https://www.youtube.com/@RockstarGames",
+      "tier": "FIRST_PARTY_VISUAL",
+      "collection": "metadata_transcript_visual_observation",
+      "asset_rights": "NO_COMMERCIAL_REUPLOAD_BY_DEFAULT",
+      "poll_minutes": 15,
+      "allowed": true
+    },
+    {
+      "id": "rockstar-gta6-preorder",
+      "name": "Rockstar Newswire - GTA VI Pre-Order",
+      "url": "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25",
+      "tier": "FIRST_PARTY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 60,
+      "allowed": true
+    },
+    {
+      "id": "rockstar-gta6-extended-look",
+      "name": "Rockstar Newswire - GTA VI Extended Look",
+      "url": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing",
+      "tier": "FIRST_PARTY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 60,
+      "allowed": true
+    },
+    {
+      "id": "rockstar-copyright-policy",
+      "name": "Rockstar Support - Copyrighted Material Policy",
+      "url": "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material",
+      "tier": "FIRST_PARTY_POLICY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 1440,
+      "allowed": true
+    },
+    {
+      "id": "rockstar-gta6-extended-look-video",
+      "name": "Rockstar Games - GTA VI Extended Look Video",
+      "url": "https://www.youtube.com/watch?v=tJbzMqJGH4k",
+      "tier": "FIRST_PARTY_VISUAL",
+      "collection": "metadata_transcript_visual_observation",
+      "asset_rights": "NO_COMMERCIAL_REUPLOAD_BY_DEFAULT",
+      "poll_minutes": 60,
+      "allowed": true
+    },
+    {
+      "id": "rockstar-gta6-editions",
+      "name": "Rockstar Support - GTA VI Platforms, Editions, and Versions",
+      "url": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions",
+      "tier": "FIRST_PARTY_POLICY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 360,
+      "allowed": true
+    },
+    {
+      "id": "youtube-ypp-eligibility",
+      "name": "YouTube Help - YPP Overview and Eligibility",
+      "url": "https://support.google.com/youtube/answer/72851",
+      "tier": "FIRST_PARTY_POLICY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 1440,
+      "allowed": true
+    },
+    {
+      "id": "youtube-ypp-monetization-policy",
+      "name": "YouTube Help - Channel Monetization Policies",
+      "url": "https://support.google.com/youtube/answer/1311392",
+      "tier": "FIRST_PARTY_POLICY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 1440,
+      "allowed": true
+    },
+    {
+      "id": "youtube-data-api-videos",
+      "name": "YouTube Data API - Videos",
+      "url": "https://developers.google.com/youtube/v3/docs/videos",
+      "tier": "FIRST_PARTY_TECHNICAL",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 1440,
+      "allowed": true
+    },
+    {
+      "id": "tiktok-content-sharing-guidelines",
+      "name": "TikTok for Developers - Content Sharing Guidelines",
+      "url": "https://developers.tiktok.com/docs/en/content-sharing-guidelines",
+      "tier": "FIRST_PARTY_POLICY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 1440,
+      "allowed": true
+    },
+    {
+      "id": "tiktok-direct-post",
+      "name": "TikTok for Developers - Direct Post",
+      "url": "https://developers.tiktok.com/docs/en/content-posting-api-get-started",
+      "tier": "FIRST_PARTY_TECHNICAL",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 1440,
+      "allowed": true
+    },
+    {
+      "id": "youtube-ypp-2027",
+      "name": "YouTube Help - 2027 Partner Program Changes",
+      "url": "https://support.google.com/youtube/answer/12843009",
+      "tier": "FIRST_PARTY_POLICY",
+      "collection": "metadata_text_change_detection",
+      "asset_rights": "TEXT_FACTS_ONLY",
+      "poll_minutes": 1440,
+      "allowed": true
+    },
+    {
+      "id": "vidiq-keyword-research-2026-08-28",
+      "name": "vidIQ - Keyword Research Snapshot 2026-08-28",
+      "url": "connected://vidiq/keyword-research/2026-08-28",
+      "tier": "AUDIENCE_RESEARCH_PROVIDER",
+      "collection": "connected_provider_snapshot",
+      "asset_rights": "DATA_FACTS_ONLY",
+      "poll_minutes": 0,
+      "allowed": true
+    }
+  ],
+  "prohibited_patterns": [
+    "pre-release leaked footage",
+    "stolen build",
+    "private-server breach",
+    "paywalled leak mirror",
+    "unattributed binary asset dump"
+  ]
+}

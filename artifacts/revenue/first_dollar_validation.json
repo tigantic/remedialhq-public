@@ -1,0 +1,52 @@
+{
+  "disclaimer": "Planning assumptions, not forecasts or guarantees.",
+  "assumptions": {
+    "label": "Creator Signal Desk 14-day founding pilot",
+    "status": "untested planning hypothesis",
+    "objective": "Test whether independent creators will pay for source-linked editorial research before investing in autonomous distribution.",
+    "offer": {
+      "pilot_price": 99.0,
+      "pilot_capacity": 5,
+      "duration_days": 14,
+      "performance_guarantee": false
+    },
+    "funnel": {
+      "personalized_prospects": 50,
+      "reply_rate": 0.2,
+      "sample_request_rate_from_replies": 0.5,
+      "purchase_rate_from_samples": 0.4,
+      "refund_rate": 0.05
+    },
+    "payments": {
+      "percentage_fee": 0.029,
+      "fixed_fee_per_charge": 0.3,
+      "fee_note": "Illustrative card-processing assumption; replace with the connected provider's actual terms. The model conservatively assumes fees are not returned after a refund."
+    },
+    "owner_time": {
+      "outreach_minutes_per_prospect": 8.0,
+      "sample_hours_per_request": 0.5,
+      "fulfillment_hours_per_non_refunded_pilot": 3.0,
+      "owner_hour_cost": 35.0
+    }
+  },
+  "results": {
+    "expected_replies": 10.0,
+    "expected_sample_requests": 5.0,
+    "expected_purchases": 2.0,
+    "expected_refunds": 0.1,
+    "expected_non_refunded_pilots": 1.9,
+    "capacity_utilization": 0.4,
+    "booked_revenue": 198.0,
+    "expected_refund_amount": 9.9,
+    "payment_fees": 6.34,
+    "net_cash_after_refunds_and_fees": 181.76,
+    "outreach_hours": 6.67,
+    "sample_hours": 2.5,
+    "fulfillment_hours": 5.7,
+    "total_owner_hours": 14.87,
+    "owner_labor_cost": 520.33,
+    "economic_contribution_after_owner_labor": -338.58,
+    "net_cash_per_owner_hour": 12.23,
+    "modeled_price_to_cover_owner_time": 282.81
+  }
+}

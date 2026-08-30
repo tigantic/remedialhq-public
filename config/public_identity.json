@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "brand": "ReMediaLHQ",
+  "brand_slug": "remedialhq",
+  "canonical_domain": "remedialhq.com",
+  "website_url": "https://remedialhq.com",
+  "youtube_handle": "@ReMediaLHQ",
+  "youtube_url": "https://www.youtube.com/@ReMediaLHQ",
+  "tagline": "Signal Over Hype.",
+  "descriptor": "Entertainment Intelligence Desk",
+  "public_bio": "Entertainment intelligence, evidence first. Confirmed. Observed. Reported. Inferred.",
+  "independence_notice": "Independent editorial coverage. Not affiliated with or endorsed by Rockstar Games or Take-Two Interactive.",
+  "public_operator_display_name": "ReMediaLHQ",
+  "operating_form": "Individual / sole proprietor pending any later entity decision",
+  "timezone": "America/New_York",
+  "language": "en-US"
+}
