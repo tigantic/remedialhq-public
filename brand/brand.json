@@ -1,0 +1,24 @@
+{
+  "working_name": "ReMediaLHQ",
+  "internal_slug": "remedialhq",
+  "descriptor": "Entertainment Intelligence Desk",
+  "tagline": "Signal Over Hype.",
+  "promise": "Every claim has a state. Every state has evidence.",
+  "status": "ACTIVE_WORKING_BRAND_DOMAIN_AND_YOUTUBE_SECURED",
+  "domain": "remedialhq.com",
+  "youtube_handle": "@ReMediaLHQ",
+  "owner": "OWNER_PRIVATE",
+  "ownership_form": "INDIVIDUAL",
+  "independence_notice": "Independent editorial coverage. Not affiliated with or endorsed by Rockstar Games or Take-Two Interactive.",
+  "palette": {
+    "background": "#050706",
+    "surface": "#111713",
+    "text": "#F2F7F3",
+    "muted": "#829087",
+    "confirmed": "#B8FF3D",
+    "observed": "#51D6E8",
+    "reported": "#FFB020",
+    "inferred": "#A68BFF",
+    "danger": "#FF5263"
+  }
+}

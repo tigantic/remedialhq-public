@@ -1,0 +1,15 @@
+project_id                 = "REPLACE_ME"
+region                     = "us-east1"
+environment                = "prod"
+image_uri                  = "us-east1-docker.pkg.dev/REPLACE_ME/remedialhq/engine@sha256:REPLACE_ME"
+publishing_enabled         = false
+network_collection_enabled = false
+create_dns_zone             = false
+site_public_enabled         = false
+daily_spend_limit_usd       = 250
+
+youtube_live_adapter_enabled          = false
+youtube_credentials_ready             = false
+youtube_expected_channel_id           = ""
+youtube_privacy_status                 = "private"
+youtube_visible_publication_authorized = false

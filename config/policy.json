@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "minimum_publish_score": 0.82,
+  "minimum_originality_score": 0.8,
+  "maximum_recent_similarity": 0.78,
+  "maximum_rights_risk": 0.15,
+  "publishable_claim_states": [
+    "CONFIRMED",
+    "OBSERVED",
+    "REPORTED",
+    "INFERRED"
+  ],
+  "blocked_claim_states": [
+    "PENDING",
+    "REJECTED"
+  ],
+  "commercial_asset_states": [
+    "OWNED",
+    "ORIGINAL_GENERATED",
+    "LICENSED_COMMERCIAL",
+    "PUBLIC_DOMAIN"
+  ],
+  "fail_closed": true,
+  "title_certainty_terms": [
+    "confirmed",
+    "official",
+    "guaranteed",
+    "proven",
+    "definitely"
+  ],
+  "required_notices": [
+    "independence"
+  ],
+  "daily_publish_caps": {
+    "youtube_long": 2,
+    "youtube_short": 4,
+    "site": 12,
+    "x": 20,
+    "instagram": 4,
+    "tiktok": 4
+  },
+  "circuit_breakers": {
+    "material_corrections_24h": 2,
+    "unsourced_sentence_rate": 0.05,
+    "platform_rejection_rate": 0.1,
+    "ledger_failure": 1,
+    "daily_spend_usd": 250
+  }
+}

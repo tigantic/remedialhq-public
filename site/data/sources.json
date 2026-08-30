@@ -1,0 +1,106 @@
+[
+  {
+    "source_id": "SRC-RSG-VI-0001",
+    "publisher": "Rockstar Games",
+    "title": "Grand Theft Auto VI official page",
+    "source_tier": "FIRST_PARTY",
+    "retrieved_at": "2026-08-29T04:00:00Z",
+    "href": "https://www.rockstargames.com/VI"
+  },
+  {
+    "source_id": "SRC-RSG-IP-0001",
+    "publisher": "Rockstar Games Support",
+    "title": "Policy on posting copyrighted Rockstar Games material",
+    "source_tier": "FIRST_PARTY_POLICY",
+    "retrieved_at": "2026-08-29T04:00:00Z",
+    "href": "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material"
+  },
+  {
+    "source_id": "SRC-YT-YPP-0001",
+    "publisher": "YouTube Help",
+    "title": "YouTube Partner Program overview and eligibility",
+    "source_tier": "FIRST_PARTY_POLICY",
+    "retrieved_at": "2026-08-29T04:00:00Z",
+    "href": "https://support.google.com/youtube/answer/72851"
+  },
+  {
+    "source_id": "SRC-YT-YPP-0002",
+    "publisher": "YouTube Help",
+    "title": "Changes to the YouTube Partner Program",
+    "source_tier": "FIRST_PARTY_POLICY",
+    "retrieved_at": "2026-08-29T04:00:00Z",
+    "href": "https://support.google.com/youtube/answer/12843009"
+  },
+  {
+    "source_id": "SRC-RSG-VIDEO-0001",
+    "publisher": "Rockstar Games",
+    "title": "Grand Theft Auto VI: An Extended Look",
+    "source_tier": "FIRST_PARTY_VISUAL",
+    "retrieved_at": "2026-08-29T04:00:00Z",
+    "href": "https://www.youtube.com/watch?v=tJbzMqJGH4k"
+  },
+  {
+    "source_id": "SRC-VIDIQ-0001",
+    "publisher": "vidIQ",
+    "title": "Connected keyword research snapshot: GTA 6",
+    "source_tier": "AUDIENCE_RESEARCH_PROVIDER",
+    "retrieved_at": "2026-08-29T04:00:00Z",
+    "href": null
+  },
+  {
+    "source_id": "SRC-RSG-PREORDER-0001",
+    "publisher": "Rockstar Games",
+    "title": "Pre-Order Grand Theft Auto VI on June 25",
+    "source_tier": "FIRST_PARTY",
+    "retrieved_at": "2026-08-29T05:10:00Z",
+    "href": "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"
+  },
+  {
+    "source_id": "SRC-RSG-EXTLOOK-0001",
+    "publisher": "Rockstar Games",
+    "title": "Grand Theft Auto VI: An Extended Look (Now Playing)",
+    "source_tier": "FIRST_PARTY",
+    "retrieved_at": "2026-08-29T05:10:00Z",
+    "href": "https://www.rockstargames.com/newswire/article/4k138k8okkk483/grand-theft-auto-vi-an-extended-look-now-playing"
+  },
+  {
+    "source_id": "SRC-RSG-EDITIONS-0001",
+    "publisher": "Rockstar Games Support",
+    "title": "Grand Theft Auto VI Platforms, Editions, and Versions",
+    "source_tier": "FIRST_PARTY_POLICY",
+    "retrieved_at": "2026-08-29T05:10:00Z",
+    "href": "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions"
+  },
+  {
+    "source_id": "SRC-YT-MONETIZATION-0001",
+    "publisher": "YouTube Help",
+    "title": "YouTube channel monetization policies",
+    "source_tier": "FIRST_PARTY_POLICY",
+    "retrieved_at": "2026-08-29T05:10:00Z",
+    "href": "https://support.google.com/youtube/answer/1311392"
+  },
+  {
+    "source_id": "SRC-YT-API-0001",
+    "publisher": "Google for Developers",
+    "title": "YouTube Data API Videos resource",
+    "source_tier": "FIRST_PARTY_TECHNICAL",
+    "retrieved_at": "2026-08-29T05:10:00Z",
+    "href": "https://developers.google.com/youtube/v3/docs/videos"
+  },
+  {
+    "source_id": "SRC-TT-GUIDELINES-0001",
+    "publisher": "TikTok for Developers",
+    "title": "Content Sharing Guidelines",
+    "source_tier": "FIRST_PARTY_POLICY",
+    "retrieved_at": "2026-08-29T05:10:00Z",
+    "href": "https://developers.tiktok.com/docs/en/content-sharing-guidelines"
+  },
+  {
+    "source_id": "SRC-TT-DIRECTPOST-0001",
+    "publisher": "TikTok for Developers",
+    "title": "Content Posting API: Direct Post",
+    "source_tier": "FIRST_PARTY_TECHNICAL",
+    "retrieved_at": "2026-08-29T05:10:00Z",
+    "href": "https://developers.tiktok.com/docs/en/content-posting-api-get-started"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "source": "brand/channel-banner.svg",
+    "output": "brand/channel-banner.png",
+    "bytes": 195049
+  },
+  {
+    "source": "brand/favicon.svg",
+    "output": "brand/favicon.png",
+    "bytes": 1445
+  },
+  {
+    "source": "brand/logo-lockup.svg",
+    "output": "brand/logo-lockup.png",
+    "bytes": 55204
+  },
+  {
+    "source": "brand/logo-mark.svg",
+    "output": "brand/logo-mark.png",
+    "bytes": 122342
+  },
+  {
+    "source": "brand/short-cover-001.svg",
+    "output": "brand/short-cover-001.png",
+    "bytes": 138922
+  },
+  {
+    "source": "brand/social-avatar.svg",
+    "output": "brand/social-avatar.png",
+    "bytes": 95780
+  },
+  {
+    "source": "brand/thumbnail-episode-001.svg",
+    "output": "brand/thumbnail-episode-001.png",
+    "bytes": 98375
+  },
+  {
+    "source": "brand/video-watermark.svg",
+    "output": "brand/video-watermark.png",
+    "bytes": 3947
+  },
+  {
+    "source": "site/og-card.svg",
+    "output": "site/og-card.png",
+    "bytes": 40344
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "currency": "USD",
+  "period": "first_12_months",
+  "disclaimer": "Planning assumptions, not forecasts or guarantees.",
+  "first_dollar_validation": {
+    "label": "Creator Signal Desk 14-day founding pilot",
+    "status": "untested planning hypothesis",
+    "objective": "Test whether independent creators will pay for source-linked editorial research before investing in autonomous distribution.",
+    "offer": {
+      "pilot_price": 99.0,
+      "pilot_capacity": 5,
+      "duration_days": 14,
+      "performance_guarantee": false
+    },
+    "funnel": {
+      "personalized_prospects": 50,
+      "reply_rate": 0.2,
+      "sample_request_rate_from_replies": 0.5,
+      "purchase_rate_from_samples": 0.4,
+      "refund_rate": 0.05
+    },
+    "payments": {
+      "percentage_fee": 0.029,
+      "fixed_fee_per_charge": 0.3,
+      "fee_note": "Illustrative card-processing assumption; replace with the connected provider's actual terms. The model conservatively assumes fees are not returned after a refund."
+    },
+    "owner_time": {
+      "outreach_minutes_per_prospect": 8.0,
+      "sample_hours_per_request": 0.5,
+      "fulfillment_hours_per_non_refunded_pilot": 3.0,
+      "owner_hour_cost": 35.0
+    }
+  },
+  "audience_scenario_status": "Later-stage sensitivity cases only; not forecasts and not evidence of current audience, eligibility, inventory, or demand.",
+  "scenarios": {
+    "base": {
+      "long_form_views": 3000000,
+      "long_form_rpm": 3.0,
+      "short_views": 20000000,
+      "short_rpm": 0.06,
+      "web_pageviews": 2000000,
+      "web_page_rpm": 12.0,
+      "affiliate_clicks": 75000,
+      "affiliate_epc": 0.22,
+      "sponsor_deals": 4,
+      "sponsor_average": 3000,
+      "newsletter_placements": 12,
+      "newsletter_average": 500,
+      "estimated_operating_cost": 22000
+    },
+    "traction": {
+      "long_form_views": 15000000,
+      "long_form_rpm": 4.0,
+      "short_views": 100000000,
+      "short_rpm": 0.08,
+      "web_pageviews": 10000000,
+      "web_page_rpm": 18.0,
+      "affiliate_clicks": 400000,
+      "affiliate_epc": 0.32,
+      "sponsor_deals": 12,
+      "sponsor_average": 10000,
+      "newsletter_placements": 24,
+      "newsletter_average": 2000,
+      "estimated_operating_cost": 95000
+    },
+    "breakout": {
+      "long_form_views": 50000000,
+      "long_form_rpm": 5.0,
+      "short_views": 300000000,
+      "short_rpm": 0.1,
+      "web_pageviews": 35000000,
+      "web_page_rpm": 24.0,
+      "affiliate_clicks": 1400000,
+      "affiliate_epc": 0.45,
+      "sponsor_deals": 20,
+      "sponsor_average": 25000,
+      "newsletter_placements": 36,
+      "newsletter_average": 5000,
+      "estimated_operating_cost": 320000
+    }
+  }
+}

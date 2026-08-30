@@ -1,0 +1,113 @@
+# GitHub Workload Identity Federation Setup
+
+Use separate authority for infrastructure bootstrap and routine application deployment.
+
+## Authority boundary
+
+The owner identity performs the one-time Google Cloud bootstrap and every production Terraform plan and apply. Do not authenticate that identity in GitHub Actions.
+
+The GitHub deploy service account receives only:
+
+- `roles/artifactregistry.writer` on the `remedialhq` Artifact Registry repository;
+- the project custom role `remedialhqCloudRunImageDeployer`, containing only `run.services.get`, `run.services.update`, and `run.operations.get`, with an IAM condition that limits service access to the seven named ReMediaLHQ services in the configured region; and
+- `roles/iam.serviceAccountUser` on the seven runtime service accounts used by those services.
+
+It receives no Terraform state-bucket access and no project IAM, Secret Manager admin, Storage admin, DNS admin, Scheduler admin, Pub/Sub admin, BigQuery admin, Service Usage admin, service-account admin, Cloud Run admin, or Cloud Run developer role. `scripts/bootstrap_gcp.sh` removes legacy broad project bindings from the deploy service account when they are present. The condition permits read-only operation polling in the configured region so an allowed service update can finish, but no update permission applies to any other Cloud Run service.
+
+The routine workflow validates Terraform with `-backend=false`, builds and pushes one digest-pinned image, and updates only existing Cloud Run services. It cannot create infrastructure or apply Terraform.
+
+After initial creation, the routine workflow is the sole authority for each Cloud Run container image. Terraform intentionally ignores only the nested image field so a later owner-controlled infrastructure apply cannot roll a service back to the bootstrap image. Terraform continues to own every other service setting, including manual zero-instance scaling and all publication controls.
+
+## Required repository variables
+
+```text
+GCP_PROJECT_ID
+GCP_REGION=us-east1
+GCP_WIF_PROVIDER
+GCP_DEPLOY_SERVICE_ACCOUNT
+```
+
+Create a protected GitHub environment named `production`. Limit deployment to `refs/heads/main` and require the owner-approved reviewers appropriate for the repository. The identity-provider condition independently requires the immutable numeric repository ID, immutable numeric owner ID, exact branch ref, exact environment, and exact workflow ref.
+
+## 1. Owner bootstrap
+
+Run this locally with the owner or administrator Google Cloud identity:
+
+```bash
+export PROJECT_ID="<project-id>"
+export BILLING_ACCOUNT_ID="<billing-account-id>"
+export REGION="us-east1"
+
+scripts/bootstrap_gcp.sh
+```
+
+The script enables services, creates the Artifact Registry repository, creates the remote-state bucket, creates the deploy service account, removes legacy broad CI grants, and installs the minimal CI grants described above.
+
+## 2. Owner initial image and Terraform apply
+
+The first Terraform apply needs an existing image. Build and push that bootstrap image with the owner identity, resolve its digest, and use the immutable digest URI as `TF_VAR_image_uri`.
+
+```bash
+BOOTSTRAP_TAG="${REGION}-docker.pkg.dev/${PROJECT_ID}/remedialhq/engine:owner-bootstrap"
+gcloud auth configure-docker "${REGION}-docker.pkg.dev" --quiet
+docker build --pull --tag "$BOOTSTRAP_TAG" .
+docker push "$BOOTSTRAP_TAG"
+BOOTSTRAP_DIGEST="$(gcloud artifacts docker images describe "$BOOTSTRAP_TAG" --format='value(image_summary.digest)')"
+export TF_VAR_image_uri="${REGION}-docker.pkg.dev/${PROJECT_ID}/remedialhq/engine@${BOOTSTRAP_DIGEST}"
+export TF_VAR_project_id="$PROJECT_ID"
+export TF_VAR_region="$REGION"
+export TF_VAR_publishing_enabled="false"
+export TF_VAR_network_collection_enabled="false"
+export TF_VAR_create_dns_zone="false"
+export TF_VAR_site_public_enabled="false"
+export TF_VAR_youtube_live_adapter_enabled="false"
+export TF_VAR_youtube_credentials_ready="false"
+export TF_VAR_youtube_visible_publication_authorized="false"
+
+terraform -chdir=infra/terraform init \
+  -input=false \
+  -backend-config="bucket=${PROJECT_ID}-remedialhq-tfstate"
+terraform -chdir=infra/terraform fmt -check
+terraform -chdir=infra/terraform validate
+terraform -chdir=infra/terraform plan -input=false -out=tfplan
+terraform -chdir=infra/terraform apply -input=false tfplan
+```
+
+Review the plan before applying it. Keep every publication, credential, public-site, DNS, and network-collection switch false during the initial apply.
+
+## 3. Bind the exact GitHub workflow
+
+After Terraform creates the runtime service accounts, run the WIF configuration with the owner identity:
+
+```bash
+export GITHUB_ORG="tigantic"
+export GITHUB_REPO="remedialhq"
+export GITHUB_REPOSITORY_ID="<immutable-numeric-repository-id>"
+export GITHUB_REPOSITORY_OWNER_ID="<immutable-numeric-owner-id>"
+export GITHUB_REF="refs/heads/main"
+export GITHUB_ENVIRONMENT="production"
+export GITHUB_WORKFLOW_REF="${GITHUB_ORG}/${GITHUB_REPO}/.github/workflows/deploy.yml@${GITHUB_REF}"
+export DEPLOY_SA="remedialhq-deploy@${PROJECT_ID}.iam.gserviceaccount.com"
+
+scripts/configure_github_wif.sh
+```
+
+The script verifies the deploy and runtime service accounts before changing bindings. It refuses activation if the deploy service account has any project role other than the update-only custom role or if that role lacks the exact seven-service IAM condition. It then creates or updates the attribute-restricted provider, grants the exact numeric repository principal permission to impersonate the deploy service account, and grants that deploy service account `iam.serviceAccounts.actAs` only on these runtime identities:
+
+```text
+remedialhq-prod-collect
+remedialhq-prod-reconcile
+remedialhq-prod-compile
+remedialhq-prod-gate
+remedialhq-prod-publish
+remedialhq-prod-measure
+remedialhq-prod-site
+```
+
+Copy the four printed values into the repository variables. Do not create a JSON service-account key.
+
+## Routine deployment
+
+Run `.github/workflows/deploy.yml` from `refs/heads/main` through the protected `production` environment. It performs tests, validates Terraform without loading production state, pushes an immutable image, confirms every target Cloud Run service already exists, forces the application publication switches closed, and updates only the existing service image and those fail-closed settings.
+
+Infrastructure, IAM, secrets, DNS, scheduling, messaging, datasets, buckets, service identities, and production authority switches remain owner-controlled Terraform work outside GitHub Actions.

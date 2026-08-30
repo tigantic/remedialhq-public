@@ -1,0 +1,72 @@
+{
+  "measured_at": "2026-08-28T09:03:37Z",
+  "provider": "vidIQ connected research",
+  "country": "US",
+  "directional_only": true,
+  "keywords": [
+    {
+      "keyword": "gta 6",
+      "estimated_monthly_search": 21264044,
+      "baseline_30d": 12314583,
+      "growth_pct": 72.67,
+      "overall_score": 77.36
+    },
+    {
+      "keyword": "gta 6 trailer",
+      "estimated_monthly_search": 6708705,
+      "baseline_30d": 4098022,
+      "growth_pct": 63.71,
+      "overall_score": 72.2
+    },
+    {
+      "keyword": "gta 6 extended look",
+      "estimated_monthly_search": 2938774,
+      "baseline_30d": null,
+      "growth_pct": null,
+      "overall_score": 75.65
+    },
+    {
+      "keyword": "gta 6 gameplay",
+      "estimated_monthly_search": 2888129,
+      "baseline_30d": 1691052,
+      "growth_pct": 70.79,
+      "overall_score": 75.87
+    },
+    {
+      "keyword": "gta 6 leaks",
+      "estimated_monthly_search": 2804556,
+      "baseline_30d": 383428,
+      "growth_pct": 631.44,
+      "overall_score": 71.35
+    },
+    {
+      "keyword": "gta vi",
+      "estimated_monthly_search": 2586692,
+      "baseline_30d": 1428574,
+      "growth_pct": 81.07,
+      "overall_score": 77.8
+    },
+    {
+      "keyword": "gta 6 news",
+      "estimated_monthly_search": 461321,
+      "baseline_30d": 425766,
+      "growth_pct": 8.35,
+      "overall_score": 66.93
+    },
+    {
+      "keyword": "gta 6 map",
+      "estimated_monthly_search": 261214,
+      "baseline_30d": 204296,
+      "growth_pct": 27.86,
+      "overall_score": 69.84
+    }
+  ],
+  "outlier_patterns": [
+    "technical engine explanation",
+    "expert reaction",
+    "map analysis",
+    "graphics comparison",
+    "evidence-led rumor adjudication"
+  ],
+  "warning": "Directional provider estimates; not audited search-engine totals."
+}

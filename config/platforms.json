@@ -1,0 +1,54 @@
+{
+  "schema_version": 2,
+  "brand": "ReMediaLHQ",
+  "domain": "remedialhq.com",
+  "platforms": {
+    "site": {
+      "enabled": true,
+      "mode": "static_export",
+      "url": "https://remedialhq.com",
+      "account_status": "DOMAIN_PURCHASED_DEPLOYMENT_PENDING"
+    },
+    "youtube": {
+      "api": "YouTube Data API v3",
+      "default_privacy": "private",
+      "enabled": false,
+      "mode": "oauth_required",
+      "handle": "@ReMediaLHQ",
+      "url": "https://www.youtube.com/@ReMediaLHQ",
+      "account_status": "CHANNEL_CREATED_OWNER_REPORTED",
+      "oauth_status": "NOT_STARTED"
+    },
+    "x": {
+      "enabled": false,
+      "mode": "user_context_api_access_required",
+      "account_status": "NOT_CREATED"
+    },
+    "instagram": {
+      "enabled": false,
+      "mode": "meta_permissions_required",
+      "account_status": "NOT_CREATED"
+    },
+    "facebook": {
+      "enabled": false,
+      "mode": "meta_permissions_required",
+      "account_status": "NOT_CREATED"
+    },
+    "threads": {
+      "enabled": false,
+      "mode": "meta_permissions_required",
+      "account_status": "NOT_CREATED"
+    },
+    "tiktok": {
+      "enabled": false,
+      "mode": "draft_upload_or_audited_direct_post_with_creator_consent",
+      "public_unattended_autopost": false,
+      "account_status": "NOT_CREATED"
+    },
+    "newsletter": {
+      "enabled": false,
+      "mode": "provider_and_domain_auth_required",
+      "account_status": "NOT_CREATED"
+    }
+  }
+}

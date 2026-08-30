@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "package_id": "PKG-LAUNCH-0001",
+  "title": "GTA VI: What Rockstar Actually Confirmed - and What It Did Not",
+  "blocks": [
+    {
+      "block_id": "B001",
+      "kind": "editorial_method",
+      "factual": false,
+      "text": "ReMediaLHQ separates published evidence from interpretation before either reaches a script. Each material claim receives a visible state so an observation or hypothesis cannot silently become a confirmed fact."
+    },
+    {
+      "block_id": "B002",
+      "kind": "editorial_method",
+      "factual": false,
+      "text": "This desk starts with one line in the ground: every GTA VI claim gets a state. Confirmed. Observed. Reported. Inferred."
+    },
+    {
+      "block_id": "B003",
+      "kind": "fact",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0001",
+        "CLM-0002"
+      ],
+      "text": "Rockstar lists November 19, 2026 as the scheduled launch date. Rockstar currently lists PlayStation 5 and Xbox Series X|S as launch platforms."
+    },
+    {
+      "block_id": "B004",
+      "kind": "fact",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0003",
+        "CLM-0004"
+      ],
+      "text": "Rockstar places GTA VI in Vice City and across Leonida. Rockstar’s official story material centers Jason and Lucia."
+    },
+    {
+      "block_id": "B004A",
+      "kind": "fact",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0016",
+        "CLM-0017",
+        "CLM-0018"
+      ],
+      "text": "Rockstar currently describes GTA VI as a single-player experience. Rockstar opened GTA VI pre-orders globally on June 25, 2026. Rockstar currently lists Standard and Ultimate editions of GTA VI."
+    },
+    {
+      "block_id": "B004B",
+      "kind": "fact",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0019",
+        "CLM-0020"
+      ],
+      "text": "Rockstar says GTA VI pre-loading begins at local midnight on November 12, 2026. Rockstar says the physical GTA VI box contains a download code rather than a disc."
+    },
+    {
+      "block_id": "B004C",
+      "kind": "fact",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0021",
+        "CLM-0022"
+      ],
+      "text": "Rockstar says the Extended Look was captured entirely from in-game footage on PlayStation 5. Rockstar staged the Extended Look on Netflix before publishing it to its official YouTube channel and GTA VI site later that day."
+    },
+    {
+      "block_id": "B005",
+      "kind": "editorial_method",
+      "factual": false,
+      "text": "A current source state is not a promise that marketing material can never change. When authoritative information changes, the record changes without erasing its prior state."
+    },
+    {
+      "block_id": "B006",
+      "kind": "editorial_method",
+      "factual": false,
+      "text": "Observed is different from confirmed. An official presentation may visibly depict behavior without explaining the system behind it or promising final shipping behavior."
+    },
+    {
+      "block_id": "B007",
+      "kind": "observation",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0006"
+      ],
+      "text": "The official presentation shows contextual interaction prompts; final shipping behavior is not yet confirmed."
+    },
+    {
+      "block_id": "B008",
+      "kind": "observation",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0007"
+      ],
+      "text": "The presentation depicts cover, combat, and weapon-pickup interactions; final implementation remains unconfirmed."
+    },
+    {
+      "block_id": "B009",
+      "kind": "editorial_method",
+      "factual": false,
+      "text": "Reported means an accountable third party owns the claim. Inferred means the desk is connecting evidence into a hypothesis. Both can be useful when their state stays visible."
+    },
+    {
+      "block_id": "B010",
+      "kind": "policy_fact",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0010",
+        "CLM-0011"
+      ],
+      "text": "This desk does not publish or reproduce pre-release leaked footage. Public availability is not treated as commercial-use permission."
+    },
+    {
+      "block_id": "B011",
+      "kind": "product_method",
+      "factual": false,
+      "text": "That boundary forces a stronger creative system: original diagrams, timelines, claim cards, structured dossiers, technical explanations, searchable answers, and visible corrections."
+    },
+    {
+      "block_id": "B012",
+      "kind": "product_method",
+      "factual": false,
+      "text": "Every public item resolves to claim IDs. A claim has sources, a state, a confidence boundary, related entities, and a history."
+    },
+    {
+      "block_id": "B013",
+      "kind": "derived_fact",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0015"
+      ],
+      "text": "August 29 is 82 calendar days before the currently scheduled November 19 launch."
+    },
+    {
+      "block_id": "B014",
+      "kind": "reported_metric",
+      "factual": true,
+      "claim_ids": [
+        "CLM-0014"
+      ],
+      "text": "A connected vidIQ snapshot dated August 28 estimated about 21 million monthly searches for ‘GTA 6’; this is a provider estimate, not an audited Google total."
+    },
+    {
+      "block_id": "B016",
+      "kind": "close",
+      "factual": false,
+      "text": "No fake certainty. No invisible corrections. No dependence on stolen material. Subscribe for the state changes, not the recycled hype. Before the hype becomes history, we build the record."
+    }
+  ]
+}
