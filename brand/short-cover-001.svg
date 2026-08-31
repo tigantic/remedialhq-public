@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050706"/><stop offset="1" stop-color="#172018"/></linearGradient><pattern id="grid" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" fill="none" stroke="#111812" stroke-width="1"/></pattern><filter id="g"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/><rect width="1080" height="1920" fill="url(#grid)"/>
+  <rect x="160" y="130" width="760" height="84" rx="42" fill="#18221A"/><text x="540" y="184" text-anchor="middle" fill="#B8FF3D" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="900">REMEDIALHQ</text>
+  <text x="540" y="520" text-anchor="middle" fill="#829087" font-family="DejaVu Sans,Arial,sans-serif" font-size="40" font-weight="800">THE COUNTDOWN</text>
+  <text x="540" y="820" text-anchor="middle" fill="#B8FF3D" font-family="DejaVu Sans,Arial,sans-serif" font-size="180" font-weight="950" filter="url(#g)">82 DAYS</text>
+  <text x="540" y="980" text-anchor="middle" fill="#F2F7F3" font-family="DejaVu Sans,Arial,sans-serif" font-size="55" font-weight="800">Until GTA VI's scheduled</text>
+  <text x="540" y="1052" text-anchor="middle" fill="#F2F7F3" font-family="DejaVu Sans,Arial,sans-serif" font-size="55" font-weight="800">November 19 launch.</text>
+  <text x="540" y="1440" text-anchor="middle" fill="#B8FF3D" font-family="DejaVu Sans,Arial,sans-serif" font-size="45" font-weight="900">SIGNAL OVER HYPE.</text>
+  <line x1="130" y1="1740" x2="950" y2="1740" stroke="#29342B" stroke-width="2"/><text x="130" y="1795" fill="#829087" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="800">INDEPENDENT EDITORIAL ANALYSIS</text>
+</svg>

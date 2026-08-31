@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="430" viewBox="0 0 1800 430">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050706"/><stop offset="1" stop-color="#101610"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1800" height="430" rx="40" fill="url(#bg)"/>
+  <g transform="translate(58 50) scale(.32)">
+    <path d="M222 285V739M222 285H346M222 739H346M802 285V739M678 285H802M678 739H802" fill="none" stroke="#334037" stroke-width="28" stroke-linecap="round"/>
+    <path d="M438 272L324 752M620 272L506 752" stroke="#B8FF3D" stroke-width="70" stroke-linecap="round" filter="url(#g)"/>
+    <text x="718" y="610" text-anchor="middle" fill="#F2F7F3" font-family="DejaVu Sans,Arial,sans-serif" font-size="180" font-weight="900">HQ</text>
+    <circle cx="512" cy="512" r="13" fill="#B8FF3D"/>
+  </g>
+  <text x="420" y="210" fill="#F2F7F3" font-family="DejaVu Sans,Arial,sans-serif" font-size="108" font-weight="900" letter-spacing="-4">ReMediaL</text>
+  <text x="1015" y="210" fill="#B8FF3D" font-family="DejaVu Sans,Arial,sans-serif" font-size="108" font-weight="900" letter-spacing="-4" filter="url(#g)">HQ</text>
+  <text x="425" y="279" fill="#829087" font-family="DejaVu Sans,Arial,sans-serif" font-size="31" font-weight="700" letter-spacing="9">SIGNAL OVER HYPE</text>
+</svg>
