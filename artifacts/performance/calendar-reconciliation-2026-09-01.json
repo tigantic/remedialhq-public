@@ -1,0 +1,60 @@
+{
+  "as_of_date": "2026-09-01",
+  "calendar_sha256": "d61516213feec198177d15a964609e63ec755daad79e3b783b7a288002d042a6",
+  "global_publication_enabled": false,
+  "issues": [
+    {
+      "calendar_state": "PLANNED",
+      "day_number": 1,
+      "feedback_record_id": null,
+      "opportunity_id": "OPP-0001",
+      "reason": "CALENDAR_STATE_NOT_EXECUTABLE",
+      "scheduled_date": "2026-08-29",
+      "status": "BLOCKED"
+    },
+    {
+      "calendar_state": "LAUNCH_NOW",
+      "day_number": 2,
+      "feedback_record_id": null,
+      "opportunity_id": "OPP-0002",
+      "reason": "PUBLICATION_AUTHORITY_DISABLED",
+      "scheduled_date": "2026-08-30",
+      "status": "BLOCKED"
+    },
+    {
+      "calendar_state": "LAUNCH_NOW",
+      "day_number": 3,
+      "feedback_record_id": null,
+      "opportunity_id": "OPP-0003",
+      "reason": "PUBLICATION_AUTHORITY_DISABLED",
+      "scheduled_date": "2026-08-31",
+      "status": "BLOCKED"
+    },
+    {
+      "calendar_state": "LAUNCH_NOW",
+      "day_number": 4,
+      "feedback_record_id": null,
+      "opportunity_id": "OPP-0004",
+      "reason": "PUBLICATION_AUTHORITY_DISABLED",
+      "scheduled_date": "2026-09-01",
+      "status": "BLOCKED"
+    }
+  ],
+  "outcome": "ACTION_REQUIRED",
+  "safeguards": {
+    "calendar_content_changed": false,
+    "calendar_dates_changed": false,
+    "offline_only": true,
+    "publication_performed": false
+  },
+  "schema_version": "remedialhq.calendar-performance-reconciliation.v1",
+  "summary": {
+    "blocked_rows": 4,
+    "calendar_rows": 82,
+    "due_rows": 4,
+    "feedback_records": 0,
+    "future_rows": 78,
+    "missed_rows": 0,
+    "reconciled_rows": 0
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "authority_snapshot": {
+    "authority_status": "SITE_ONLY_GRANTED",
+    "global_publication_enabled": false,
+    "source": "config/publication_authority.json",
+    "youtube": {
+      "authorized_at": null,
+      "private_upload_authorized": false,
+      "visible_upload_authorized": false
+    }
+  },
+  "channel_setup_oauth_scopes": [
+    "https://www.googleapis.com/auth/youtube.force-ssl"
+  ],
+  "contains_owner_secrets": false,
+  "evidence_files": [
+    {
+      "bytes": 3589,
+      "path": "SECURITY.md",
+      "role": "fail-closed publication and exact upload-confirmation security policy",
+      "sha256": "348e381731471998c7e190102556da3f075dbebe8acde4d178a4af92805c7186"
+    },
+    {
+      "bytes": 1103,
+      "path": "config/publication_authority.json",
+      "role": "fail-closed publication authority snapshot",
+      "sha256": "4e2572fde58806d52d49c4d6246d4c4a6c0400f9070318802001a68e6ea7b138"
+    },
+    {
+      "bytes": 24777,
+      "path": "ops/YOUTUBE_API_COMPLIANCE_PACKAGE.md",
+      "role": "sanitized audit draft and prerequisite checklist",
+      "sha256": "bae51ce805f7bb179c74e47d5c82e0d030593c428ad08062f78d271ecceee143"
+    },
+    {
+      "bytes": 4772,
+      "path": "ops/YOUTUBE_CHANNEL_SETUP.md",
+      "role": "owner operating sequence for offline preview and express confirmation",
+      "sha256": "853b4e989127eac6b3eafebf6e99a617b3e9cc575e963938264cf30187df3e0e"
+    },
+    {
+      "bytes": 5304,
+      "path": "site/data-deletion.html",
+      "role": "public revocation and deletion instructions",
+      "sha256": "1699d5d26bb0ba51fb14e87e99acf230bc613664d3f550f0f564abbc9f066951"
+    },
+    {
+      "bytes": 11169,
+      "path": "site/privacy.html",
+      "role": "public YouTube API data and privacy disclosure",
+      "sha256": "ed125126667c42dcc75c72410610b5e849797597c017f8fd94fbad9a196ec7df"
+    },
+    {
+      "bytes": 17749,
+      "path": "site/terms.html",
+      "role": "public connected-feature terms and user-control disclosure",
+      "sha256": "1f4bbee93bbd32459ae22a57690febeb1e2263866a055ebf67fe662cbfb0d950"
+    },
+    {
+      "bytes": 22115,
+      "path": "src/remedialhq/auth.py",
+      "role": "OAuth scope, channel resolution, refresh, and private credential-storage implementation",
+      "sha256": "5f73acb8caf8f24c4876c9ae4dc50b77089c0ba5e9eeaf154ebcce9db996d2c7"
+    },
+    {
+      "bytes": 55415,
+      "path": "src/remedialhq/cli.py",
+      "role": "offline preview, express confirmation, fail-closed upload, and explicit read-only verification commands",
+      "sha256": "51b6ce602c6f1f1990e040970fc667b3dbbabe49f9abeeaeeadaa0c7badf8dbc"
+    },
+    {
+      "bytes": 20799,
+      "path": "src/remedialhq/phases.py",
+      "role": "runtime upload wiring that requires the exact preview-confirmation pair",
+      "sha256": "1fd277df1b72b73fb4aaa7a51e82cc5f007f62d274b83cfefffe8e28f9b18e51"
+    },
+    {
+      "bytes": 15878,
+      "path": "src/remedialhq/publishers/youtube.py",
+      "role": "descriptor-pinned YouTube upload, exact-marker collision stop, thumbnail, and sanitized response-evidence implementation",
+      "sha256": "2752f44c79b6f9b0e66236d232af8a938646e5f9186c937fe17a481fef6ef807"
+    },
+    {
+      "bytes": 17530,
+      "path": "src/remedialhq/youtube_channel_setup.py",
+      "role": "fixed-scope private-playlist and reviewed-watermark setup implementation",
+      "sha256": "b9d26cf251e736015026f483cb36927151f9c63424a73b6c47e60006240688a6"
+    },
+    {
+      "bytes": 38581,
+      "path": "src/remedialhq/youtube_upload_control.py",
+      "role": "immutable exact-input preview, canonical digest consumption, pinned-byte snapshots, and express confirmation",
+      "sha256": "b428bb0f57fdd63dae2297f332b37f73e33a45acd42a4fdc59421fac55740601"
+    },
+    {
+      "bytes": 33653,
+      "path": "src/remedialhq/youtube_verification.py",
+      "role": "read-only processing, channel, privacy, thumbnail, upload-response, and Analytics verifier",
+      "sha256": "982ceecc44d0c558f6d31827ac157bf8515e951701901ed3ea4985f29f563778"
+    },
+    {
+      "bytes": 11408,
+      "path": "tests/test_auth.py",
+      "role": "OAuth acceptance, revocation, local deletion, and private-evidence verification",
+      "sha256": "d9e28ddcf2abbee64fd95806cbfcac03d947eb846956e0ff875a9b7174b82b13"
+    },
+    {
+      "bytes": 10741,
+      "path": "tests/test_phases.py",
+      "role": "phase-level fail-closed HOLD conversion for upload-control rejections",
+      "sha256": "37f860bb6280c659127278ddae963e348ed43b0405f1699a1947b5fa4729901a"
+    },
+    {
+      "bytes": 11188,
+      "path": "tests/test_youtube_api_compliance.py",
+      "role": "focused disclosure and manifest-integrity verification",
+      "sha256": "6884664f6d95c6bf670c4991b7c4e93b9b493a2dbca4acbde6f84bbcccd1df6d"
+    },
+    {
+      "bytes": 19350,
+      "path": "tests/test_youtube_adapter.py",
+      "role": "focused upload-adapter and create-only evidence-boundary verification",
+      "sha256": "7ef6246006a9754abaeec180aca2b826b965170a0e62a682168bdb5a89d8ff83"
+    },
+    {
+      "bytes": 17030,
+      "path": "tests/test_youtube_channel_setup.py",
+      "role": "fixed channel-setup scope, plan, guardrail, and reconciliation verification",
+      "sha256": "398ab30c45abf663263aeecb1c76fd3db238f6b8d7686deb4398d24f50fce2cb"
+    },
+    {
+      "bytes": 16101,
+      "path": "tests/test_youtube_upload_control.py",
+      "role": "focused exact binding, offline confirmation, drift rejection, and single-use tests",
+      "sha256": "57fbbdbe478fcab8750fe473d724227d603f7be12b7b50c4439fe7ad10641bbd"
+    },
+    {
+      "bytes": 24463,
+      "path": "tests/test_youtube_verification.py",
+      "role": "focused verifier, fixture, live-readback gate, and owner-private evidence tests",
+      "sha256": "1e7d18eeb69146bc32579810d28f1800cc3ddf3d46937722df99819d4b98019f"
+    }
+  ],
+  "external_policy_references": {
+    "google_privacy_policy": "https://policies.google.com/privacy",
+    "google_security_permissions": "https://security.google.com/settings/security/permissions",
+    "youtube_api_developer_policies": "https://developers.google.com/youtube/terms/developer-policies",
+    "youtube_api_terms": "https://developers.google.com/youtube/terms/api-services-terms-of-service",
+    "youtube_terms": "https://www.youtube.com/t/terms"
+  },
+  "manifest_sha256": "6eb2470ba8674152da7b5dea64de8cd3b6090ffe0c6324cf13c440bf52adce34",
+  "oauth_scopes": [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.readonly",
+    "https://www.googleapis.com/auth/yt-analytics.readonly"
+  ],
+  "package_status": "DRAFT_PENDING_PREREQUISITES_AND_OWNER_SUBMISSION",
+  "pending_evidence": [
+    {
+      "artifact": "src/remedialhq/youtube_verification.py",
+      "evidence_id": "RMH-112_YOUTUBE_VERIFICATION",
+      "readiness": "WAITING",
+      "required_before_submission": true,
+      "status": "IMPLEMENTED_LIVE_EVIDENCE_PENDING",
+      "task_status": "TODO"
+    },
+    {
+      "artifact": null,
+      "evidence_id": "RMH-113_PRIVATE_UNLISTED_SOAK",
+      "readiness": "WAITING",
+      "required_before_submission": true,
+      "status": "PENDING",
+      "task_status": "TODO"
+    },
+    {
+      "artifact": null,
+      "canonical_site_sha256": "1443f5afcc6c9a85469112f54964e325307ed2e067f0859e8464ea90691b0936",
+      "engine_source_commit": "0a23892156da53bdad4b956b449b076162aac013",
+      "evidence_form": "SANITIZED_INLINE_DEPLOYMENT_READBACK_SUMMARY",
+      "evidence_id": "UPDATED_POLICY_DEPLOYMENT_READBACK",
+      "required_before_submission": true,
+      "sites_source_commit": "98c4e3360a8d3df605055371e368651400e8f57e",
+      "sites_version": 19,
+      "status": "VERIFIED",
+      "verified_at": "2026-09-02T15:32:01Z"
+    },
+    {
+      "artifact": null,
+      "evidence_id": "YOUTUBE_API_COMPLIANCE_AUDIT_SUBMISSION",
+      "required_before_submission": true,
+      "status": "PENDING_OWNER_ACTION"
+    }
+  ],
+  "prepared_on": "2026-09-01",
+  "public_policy_routes": {
+    "data_deletion": {
+      "source": "site/data-deletion.html",
+      "url": "https://remedialhq.com/data-deletion"
+    },
+    "privacy": {
+      "source": "site/privacy.html",
+      "url": "https://remedialhq.com/privacy"
+    },
+    "terms": {
+      "source": "site/terms.html",
+      "url": "https://remedialhq.com/terms"
+    }
+  },
+  "schema_version": "remedialhq.youtube-api-compliance-evidence.v1",
+  "secret_exclusions": [
+    "oauth_client_secret",
+    "oauth_access_token",
+    "oauth_refresh_token",
+    "google_cloud_project_identifier",
+    "authorized_channel_identifier",
+    "owner_private_contact"
+  ],
+  "task_id": "RMH-114"
+}

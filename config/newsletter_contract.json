@@ -1,0 +1,13 @@
+{
+  "schema_version": "remedialhq.newsletter-contract.v1",
+  "enabled": false,
+  "provider": null,
+  "public_signup_endpoint": null,
+  "public_webhook_endpoint": null,
+  "store_addresses": false,
+  "webhook_signing_algorithm": "hmac-sha256",
+  "webhook_tolerance_seconds": 300,
+  "max_signup_body_bytes": 4096,
+  "max_webhook_body_bytes": 16384,
+  "status": "CONTRACT_ONLY_PROVIDER_AND_OWNER_APPROVAL_REQUIRED"
+}

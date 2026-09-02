@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "brand": "ReMediaLHQ",
+  "domain": "remedialhq.com",
+  "platforms": {
+    "site": {
+      "enabled": true,
+      "mode": "static_export",
+      "url": "https://remedialhq.com",
+      "account_status": "LIVE_HTTPS_VERIFIED"
+    },
+    "youtube": {
+      "api": "YouTube Data API v3",
+      "default_privacy": "private",
+      "enabled": false,
+      "mode": "oauth_required",
+      "handle": "@ReMediaLHQ",
+      "url": "https://www.youtube.com/@ReMediaLHQ",
+      "channel_id": "UCm6r0Dl4So4COH00U1qCE2w",
+      "display_name": "ReMediaL HQ",
+      "account_status": "PUBLIC_HANDLE_CHANNEL_ID_DISPLAY_NAME_ASSETS_AND_WEBSITE_LINK_VERIFIED",
+      "oauth_status": "NOT_STARTED"
+    },
+    "x": {
+      "enabled": false,
+      "mode": "user_context_api_access_required",
+      "handle": "@ReMediaLHQ",
+      "account_status": "CREATED_AND_HANDLE_SECURED_OWNER_REPORTED"
+    },
+    "instagram": {
+      "enabled": false,
+      "mode": "meta_permissions_required",
+      "handle": "remedialhq",
+      "account_status": "CREATED_OWNER_REPORTED_PROFESSIONAL_STATUS_NOT_VERIFIED"
+    },
+    "facebook": {
+      "enabled": false,
+      "mode": "meta_permissions_required",
+      "url": "https://www.facebook.com/profile.php?id=61593752439603",
+      "account_status": "PUBLIC_PAGE_VERIFIED_DISPLAY_NAME_ALIGNMENT_REQUIRED"
+    },
+    "threads": {
+      "enabled": false,
+      "mode": "meta_permissions_required",
+      "account_status": "NOT_CREATED"
+    },
+    "tiktok": {
+      "enabled": false,
+      "mode": "draft_upload_or_audited_direct_post_with_creator_consent",
+      "public_unattended_autopost": false,
+      "account_status": "NOT_CREATED"
+    },
+    "newsletter": {
+      "enabled": false,
+      "mode": "provider_and_domain_auth_required",
+      "account_status": "NOT_CREATED"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remedialhq-engine"
+version = "0.8.2"
+description = "Evidence-led creator research and entertainment media engine for ReMediaLHQ"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "LicenseRef-Proprietary"
+license-files = ["LICENSE.txt"]
+authors = [{ name = "ReMediaLHQ" }]
+dependencies = []
+
+[project.optional-dependencies]
+youtube = ["google-api-python-client>=2.0", "google-auth-oauthlib>=1.0", "google-auth>=2.0"]
+vertex = ["google-genai>=1.0"]
+gcp = ["google-cloud-pubsub>=2.25", "google-cloud-storage>=2.18", "google-cloud-bigquery>=3.25", "google-cloud-secret-manager>=2.21"]
+google-control = ["google-api-python-client>=2.0", "google-auth>=2.0"]
+media = ["Pillow>=10.0", "CairoSVG>=2.7"]
+dev = ["ruff==0.16.5", "mypy==2.3.1"]
+
+[project.scripts]
+remedialhq = "remedialhq.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true

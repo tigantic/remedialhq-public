@@ -1,0 +1,78 @@
+{
+  "package_id": "PKG-LAUNCH-0001",
+  "title": "GTA VI: What Rockstar Actually Confirmed - and What It Did Not",
+  "platforms": [
+    "youtube",
+    "site",
+    "x",
+    "newsletter"
+  ],
+  "claim_ids": [
+    "CLM-0001",
+    "CLM-0002",
+    "CLM-0003",
+    "CLM-0004",
+    "CLM-0006",
+    "CLM-0007",
+    "CLM-0010",
+    "CLM-0011",
+    "CLM-0014",
+    "CLM-0015",
+    "CLM-0016",
+    "CLM-0017",
+    "CLM-0018",
+    "CLM-0019",
+    "CLM-0020",
+    "CLM-0021",
+    "CLM-0022"
+  ],
+  "assets": [
+    {
+      "asset_id": "AST-THUMB-0001",
+      "path": "brand/thumbnail-episode-001.svg",
+      "rights_status": "ORIGINAL_GENERATED"
+    },
+    {
+      "asset_id": "AST-LOGO-0001",
+      "path": "brand/logo-lockup.svg",
+      "rights_status": "ORIGINAL_GENERATED"
+    },
+    {
+      "asset_id": "AST-VIDEO-0001",
+      "path": "artifacts/launch/remedialhq-launch-short-visual-prototype.mp4",
+      "rights_status": "ORIGINAL_GENERATED",
+      "sha256": "1eca37c205dc4477e21bfdaa2d09839633166992f2605e72b45e33ebe11d7e86"
+    },
+    {
+      "asset_id": "AST-THUMB-PNG-0001",
+      "path": "brand/thumbnail-episode-001.png",
+      "rights_status": "ORIGINAL_GENERATED",
+      "sha256": "1816c12b1adc7f4e4b3c4751c5b48b2dd5a23b3f5ad01b796ed513919a92d425"
+    }
+  ],
+  "media_review": {
+    "asset_id": "AST-VIDEO-0001",
+    "storyboard_path": "artifacts/launch/short-001-storyboard.json",
+    "storyboard_sha256": "7d45d9d13a15fc28235d6df1a6c86843419095983bad46660b22107f5552238f"
+  },
+  "originality_score": 0.94,
+  "recent_similarity": 0.08,
+  "rights_risk": 0.03,
+  "disclosures": [
+    "independence"
+  ],
+  "status": "READY_FOR_GATE",
+  "title_claim_ids": [
+    "CLM-0001",
+    "CLM-0002",
+    "CLM-0003",
+    "CLM-0004",
+    "CLM-0016",
+    "CLM-0017",
+    "CLM-0018",
+    "CLM-0019",
+    "CLM-0020",
+    "CLM-0021",
+    "CLM-0022"
+  ]
+}

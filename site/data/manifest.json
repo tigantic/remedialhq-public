@@ -1,0 +1,9 @@
+{
+  "claims": 20,
+  "outputs": [
+    "/data/claims.json",
+    "/data/sources.json"
+  ],
+  "publishable_claims": 20,
+  "sources": 13
+}

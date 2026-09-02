@@ -1,0 +1,282 @@
+[
+  {
+    "claim_id": "CLM-0001",
+    "proposition": "Rockstar lists November 19, 2026 as the scheduled launch date.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-VI-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI"
+    ],
+    "public_wording": "Rockstar lists November 19, 2026 as the scheduled launch date.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0002",
+    "proposition": "Rockstar currently lists PlayStation 5 and Xbox Series X|S as launch platforms.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-VI-0001"
+    ],
+    "entities": [
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
+    "public_wording": "Rockstar currently lists PlayStation 5 and Xbox Series X|S as launch platforms.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0003",
+    "proposition": "Rockstar places GTA VI in Vice City and across Leonida.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-VI-0001"
+    ],
+    "entities": [
+      "Vice City",
+      "Leonida"
+    ],
+    "public_wording": "Rockstar places GTA VI in Vice City and across Leonida.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0004",
+    "proposition": "Rockstar’s official story material centers Jason and Lucia.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-VI-0001"
+    ],
+    "entities": [
+      "Jason",
+      "Lucia"
+    ],
+    "public_wording": "Rockstar’s official story material centers Jason and Lucia.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0005",
+    "proposition": "Rockstar released an official extended look on August 27, 2026.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-VI-0001",
+      "SRC-RSG-VIDEO-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI"
+    ],
+    "public_wording": "Rockstar released an official extended look on August 27, 2026.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0006",
+    "proposition": "The official presentation shows contextual interaction prompts; final shipping behavior is not yet confirmed.",
+    "state": "OBSERVED",
+    "source_ids": [
+      "SRC-RSG-VIDEO-0001"
+    ],
+    "entities": [
+      "interaction system"
+    ],
+    "public_wording": "The official presentation shows contextual interaction prompts; final shipping behavior is not yet confirmed.",
+    "observed_at": "00:00-03:45"
+  },
+  {
+    "claim_id": "CLM-0007",
+    "proposition": "The presentation depicts cover, combat, and weapon-pickup interactions; final implementation remains unconfirmed.",
+    "state": "OBSERVED",
+    "source_ids": [
+      "SRC-RSG-VIDEO-0001"
+    ],
+    "entities": [
+      "combat system"
+    ],
+    "public_wording": "The presentation depicts cover, combat, and weapon-pickup interactions; final implementation remains unconfirmed.",
+    "observed_at": "03:46-05:58"
+  },
+  {
+    "claim_id": "CLM-0010",
+    "proposition": "This desk does not publish or reproduce pre-release leaked footage.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-IP-0001"
+    ],
+    "entities": [
+      "editorial policy"
+    ],
+    "public_wording": "This desk does not publish or reproduce pre-release leaked footage.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0011",
+    "proposition": "Public availability is not treated as commercial-use permission.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-IP-0001"
+    ],
+    "entities": [
+      "rights policy"
+    ],
+    "public_wording": "Public availability is not treated as commercial-use permission.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0012",
+    "proposition": "Current YouTube full-ad entry is 1,000 subscribers plus 4,000 watch hours or 10 million Shorts views.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-YT-YPP-0001"
+    ],
+    "entities": [
+      "YouTube Partner Program"
+    ],
+    "public_wording": "Current YouTube full-ad entry is 1,000 subscribers plus 4,000 watch hours or 10 million Shorts views.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0013",
+    "proposition": "YouTube has announced higher full-ad entry thresholds for new applicants beginning February 1, 2027.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-YT-YPP-0002"
+    ],
+    "entities": [
+      "YouTube Partner Program"
+    ],
+    "public_wording": "YouTube has announced higher full-ad entry thresholds for new applicants beginning February 1, 2027.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0014",
+    "proposition": "A connected vidIQ snapshot dated August 28 estimated about 21 million monthly searches for ‘GTA 6’; this is a provider estimate, not an audited Google total.",
+    "state": "REPORTED",
+    "source_ids": [
+      "SRC-VIDIQ-0001"
+    ],
+    "entities": [
+      "GTA 6",
+      "search demand"
+    ],
+    "public_wording": "A connected vidIQ snapshot dated August 28 estimated about 21 million monthly searches for ‘GTA 6’; this is a provider estimate, not an audited Google total.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0015",
+    "proposition": "August 29 is 82 calendar days before the currently scheduled November 19 launch.",
+    "state": "INFERRED",
+    "source_ids": [
+      "SRC-RSG-VI-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "launch countdown"
+    ],
+    "public_wording": "August 29 is 82 calendar days before the currently scheduled November 19 launch.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0016",
+    "proposition": "Rockstar currently describes GTA VI as a single-player experience.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-PREORDER-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "single player"
+    ],
+    "public_wording": "Rockstar currently describes GTA VI as a single-player experience.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0017",
+    "proposition": "Rockstar opened GTA VI pre-orders globally on June 25, 2026.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-PREORDER-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "pre-order"
+    ],
+    "public_wording": "Rockstar opened GTA VI pre-orders globally on June 25, 2026.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0018",
+    "proposition": "Rockstar currently lists Standard and Ultimate editions of GTA VI.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-EDITIONS-0001",
+      "SRC-RSG-VI-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "Standard Edition",
+      "Ultimate Edition"
+    ],
+    "public_wording": "Rockstar currently lists Standard and Ultimate editions of GTA VI.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0019",
+    "proposition": "Rockstar says GTA VI pre-loading begins at local midnight on November 12, 2026.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-PREORDER-0001",
+      "SRC-RSG-EDITIONS-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "pre-load"
+    ],
+    "public_wording": "Rockstar says GTA VI pre-loading begins at local midnight on November 12, 2026.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0020",
+    "proposition": "Rockstar says the physical GTA VI box contains a download code rather than a disc.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-PREORDER-0001",
+      "SRC-RSG-EDITIONS-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "physical version",
+      "download code"
+    ],
+    "public_wording": "Rockstar says the physical GTA VI box contains a download code rather than a disc.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0021",
+    "proposition": "Rockstar says the Extended Look was captured entirely from in-game footage on PlayStation 5.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-EXTLOOK-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "PlayStation 5",
+      "Extended Look"
+    ],
+    "public_wording": "Rockstar says the Extended Look was captured entirely from in-game footage on PlayStation 5.",
+    "observed_at": null
+  },
+  {
+    "claim_id": "CLM-0022",
+    "proposition": "Rockstar staged the Extended Look on Netflix before publishing it to its official YouTube channel and GTA VI site later that day.",
+    "state": "CONFIRMED",
+    "source_ids": [
+      "SRC-RSG-EXTLOOK-0001"
+    ],
+    "entities": [
+      "Grand Theft Auto VI",
+      "Netflix",
+      "YouTube"
+    ],
+    "public_wording": "Rockstar staged the Extended Look on Netflix before publishing it to its official YouTube channel and GTA VI site later that day.",
+    "observed_at": null
+  }
+]

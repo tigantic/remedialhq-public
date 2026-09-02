@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#050706"/>
+  <g stroke="#111812" stroke-width="1">
+    <path d="M0 70h1200M0 140h1200M0 210h1200M0 280h1200M0 350h1200M0 420h1200M0 490h1200M0 560h1200"/>
+    <path d="M70 0v630M140 0v630M210 0v630M280 0v630M350 0v630M420 0v630M490 0v630M560 0v630M630 0v630M700 0v630M770 0v630M840 0v630M910 0v630M980 0v630M1050 0v630M1120 0v630"/>
+  </g>
+  <rect x="72" y="64" width="1056" height="502" rx="18" fill="#0b0f0c" stroke="#2b372e" stroke-width="2"/>
+  <text x="118" y="143" fill="#b8ff3d" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" letter-spacing="5">[R//] REMEDIAL HQ</text>
+  <text x="118" y="285" fill="#f2f7f3" font-family="Arial,Helvetica,sans-serif" font-size="86" font-weight="800" letter-spacing="-4">SIGNAL OVER</text>
+  <text x="118" y="377" fill="#b8ff3d" font-family="Arial,Helvetica,sans-serif" font-size="86" font-weight="800" letter-spacing="-4">THE HYPE.</text>
+  <text x="120" y="455" fill="#aab4ad" font-family="Arial,Helvetica,sans-serif" font-size="31">Source-linked entertainment intelligence</text>
+  <line x1="120" y1="500" x2="1080" y2="500" stroke="#2b372e" stroke-width="2"/>
+  <text x="120" y="540" fill="#7f8c83" font-family="Arial,Helvetica,sans-serif" font-size="23" letter-spacing="2">CLAIM STATES · CREATOR SIGNAL DESK · REMEDIALHQ.COM</text>
+</svg>

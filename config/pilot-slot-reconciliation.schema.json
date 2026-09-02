@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://remedialhq.com/schemas/pilot-slot-reconciliation.v1.json",
+  "title": "ReMediaLHQ pilot founding-slot reconciliation evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "reconciliation_ref",
+    "reconciled_at",
+    "scope",
+    "checks",
+    "payment_provider",
+    "prior_ledger",
+    "lifetime_consumed_slots"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "remedialhq.pilot-slot-reconciliation.v1"
+    },
+    "reconciliation_ref": {
+      "type": "string",
+      "pattern": "^rec_[0-9a-f]{32}$"
+    },
+    "reconciled_at": {
+      "type": "string",
+      "format": "date-time",
+      "maxLength": 40
+    },
+    "scope": {
+      "const": "ALL_LIFETIME_FOUNDING_PURCHASES"
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "all_known_ledgers_reviewed",
+        "payment_provider_history_reviewed",
+        "single_authoritative_successor_designated"
+      ],
+      "properties": {
+        "all_known_ledgers_reviewed": { "const": true },
+        "payment_provider_history_reviewed": { "const": true },
+        "single_authoritative_successor_designated": { "const": true }
+      }
+    },
+    "payment_provider": {
+      "$ref": "#/$defs/paymentProvider"
+    },
+    "prior_ledger": {
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/priorLedger" }
+      ]
+    },
+    "lifetime_consumed_slots": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 5
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "paymentProvider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "mode",
+        "observed_at",
+        "history_scope",
+        "history_evidence_sha256",
+        "provider_purchase_sha256s"
+      ],
+      "properties": {
+        "provider": { "const": "STRIPE" },
+        "mode": { "const": "LIVE" },
+        "observed_at": {
+          "type": "string",
+          "format": "date-time",
+          "maxLength": 40
+        },
+        "history_scope": { "const": "ALL_AVAILABLE_ACCOUNT_HISTORY" },
+        "history_evidence_sha256": { "$ref": "#/$defs/sha256" },
+        "provider_purchase_sha256s": {
+          "type": "array",
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sha256" }
+        }
+      }
+    },
+    "priorLedger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ledger_schema_version",
+        "ledger_head_sha256",
+        "inherited_consumed_slots",
+        "purchase_event_sha256s",
+        "purchase_evidence_artifact_sha256s",
+        "provider_purchase_sha256s"
+      ],
+      "properties": {
+        "ledger_schema_version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "ledger_head_sha256": { "$ref": "#/$defs/sha256" },
+        "inherited_consumed_slots": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "purchase_event_sha256s": {
+          "type": "array",
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sha256" }
+        },
+        "purchase_evidence_artifact_sha256s": {
+          "type": "array",
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sha256" }
+        },
+        "provider_purchase_sha256s": {
+          "type": "array",
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/sha256" }
+        }
+      }
+    }
+  }
+}
