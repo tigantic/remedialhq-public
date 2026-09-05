@@ -1,0 +1,17 @@
+name: Handoff runner availability check
+on:
+  push:
+    branches: [ops/handoff-deploy-20260905]
+    paths: [.github/workflows/handoff-runner-check.yml]
+permissions:
+  contents: read
+jobs:
+  runner-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check built-in runtime only
+        run: |
+          node --version
+          npm --version
+          echo 'Runner started; no files, credentials or deployment changed.'
